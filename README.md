@@ -117,7 +117,6 @@ Do not publish account-specific ARNs, account IDs, email addresses, secret value
 │   └── secure/
 │       ├── rotate_demo_secret.py
 │       └── secrets_manager_client.py
-└── terraform/                   # No Terraform files appeared in the supplied tree
 ```
 
 The supplied directory listing showed an empty `terraform/` folder. The AWS infrastructure described here was configured and tested through the AWS Console and AWS CLI; this README does **not** claim that the deployed resources are currently provisioned by Terraform.
