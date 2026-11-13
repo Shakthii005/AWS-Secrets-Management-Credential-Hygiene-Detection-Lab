@@ -3,7 +3,7 @@
   "id": "synthetic-lambda-config-change",
   "detail-type": "AWS API Call via CloudTrail",
   "source": "aws.lambda",
-  "account": "121592733055",
+  "account": "xxxxxxxxxxxxxx",
   "time": "2026-11-13T13:00:00Z",
   "region": "ap-south-1",
   "resources": [],
