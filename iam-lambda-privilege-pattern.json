@@ -1,5 +1,5 @@
 {
-  "account": ["121592733055"],
+  "account": ["xxxxxxxxxx"],
   "region": ["ap-south-1"],
   "detail-type": ["AWS API Call via CloudTrail"],
   "$or": [
