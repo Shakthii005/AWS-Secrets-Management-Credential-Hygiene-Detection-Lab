@@ -1,7 +1,7 @@
 {
   "version": "0",
   "id": "sample-iam-change-001",
-  "account": "121592733055",
+  "account": "xxxxxxxxxxx",
   "source": "aws.iam",
   "time": "2026-11-13T10:00:00Z",
   "region": "ap-south-1",
