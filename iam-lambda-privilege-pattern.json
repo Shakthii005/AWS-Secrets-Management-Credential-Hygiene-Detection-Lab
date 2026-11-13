@@ -1,0 +1,46 @@
+{
+  "account": ["121592733055"],
+  "region": ["ap-south-1"],
+  "detail-type": ["AWS API Call via CloudTrail"],
+  "$or": [
+    {
+      "source": ["aws.iam"],
+      "detail": {
+        "eventSource": ["iam.amazonaws.com"],
+        "eventName": [
+          "AttachRolePolicy",
+          "DetachRolePolicy",
+          "PutRolePolicy",
+          "DeleteRolePolicy",
+          "UpdateAssumeRolePolicy"
+        ],
+        "requestParameters": {
+          "roleName": ["SecretsRotationLambdaRole"]
+        }
+      }
+    },
+    {
+      "source": ["aws.lambda"],
+      "detail": {
+        "eventSource": ["lambda.amazonaws.com"],
+        "eventName": [
+          "CreateFunction",
+          "CreateFunction20150331",
+          "UpdateFunctionCode",
+          "UpdateFunctionCode20150331v2",
+          "UpdateFunctionConfiguration",
+          "UpdateFunctionConfiguration20150331v2",
+          "AddPermission",
+          "AddPermission20150331v2",
+          "RemovePermission",
+          "RemovePermission20150331v2",
+          "DeleteFunction",
+          "DeleteFunction20150331"
+        ],
+        "requestParameters": {
+          "functionName": ["secrets-lab-rotation"]
+        }
+      }
+    }
+  ]
+}

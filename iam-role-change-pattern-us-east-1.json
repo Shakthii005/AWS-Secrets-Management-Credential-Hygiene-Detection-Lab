@@ -1,0 +1,20 @@
+{
+  "source": ["aws.iam"],
+  "detail-type": ["AWS API Call via CloudTrail"],
+  "account": ["121592733055"],
+  "region": ["us-east-1"],
+  "detail": {
+    "eventSource": ["iam.amazonaws.com"],
+    "eventName": [
+      "AttachRolePolicy",
+      "DetachRolePolicy",
+      "PutRolePolicy",
+      "DeleteRolePolicy",
+      "UpdateAssumeRolePolicy"
+    ],
+    "awsRegion": ["us-east-1"],
+    "requestParameters": {
+      "roleName": ["SecretsRotationLambdaRole"]
+    }
+  }
+}

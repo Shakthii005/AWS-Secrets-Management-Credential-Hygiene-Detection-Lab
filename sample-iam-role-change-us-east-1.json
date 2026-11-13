@@ -1,0 +1,19 @@
+{
+  "version": "0",
+  "id": "synthetic-iam-role-change",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.iam",
+  "account": "121592733055",
+  "time": "2026-11-13T13:22:16Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "eventSource": "iam.amazonaws.com",
+    "eventName": "PutRolePolicy",
+    "awsRegion": "us-east-1",
+    "requestParameters": {
+      "roleName": "SecretsRotationLambdaRole",
+      "policyName": "TemporaryDetectionTestOnly"
+    }
+  }
+}

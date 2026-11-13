@@ -1,0 +1,18 @@
+{
+  "version": "0",
+  "id": "synthetic-lambda-config-change",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.lambda",
+  "account": "121592733055",
+  "time": "2026-11-13T13:00:00Z",
+  "region": "ap-south-1",
+  "resources": [],
+  "detail": {
+    "eventSource": "lambda.amazonaws.com",
+    "eventName": "UpdateFunctionConfiguration20150331v2",
+    "awsRegion": "ap-south-1",
+    "requestParameters": {
+      "functionName": "secrets-lab-rotation"
+    }
+  }
+}

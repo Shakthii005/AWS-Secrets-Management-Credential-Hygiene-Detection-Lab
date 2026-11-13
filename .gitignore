@@ -1,0 +1,15 @@
+# Credentials
+.env
+**/.env
+
+# AWS and Terraform state
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Real security investigation data
+actual-put-secret-value-event.json
+
+# Local files
+*.log
