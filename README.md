@@ -88,7 +88,7 @@ Other Mumbai EventBridge rule names used by the lab:
 - `secrets-lab-secret-modification`
 - `secrets-lab-iam-lambda-change` (used for the Lambda-change branch; IAM global-service events are covered by the dedicated `us-east-1` rule)
 
-Do not publish account-specific ARNs, account IDs, email addresses, secret values, or unredacted CloudTrail identities in a public repository. Replace them with placeholders in screenshots and examples.
+
 
 ## Repository layout
 
@@ -119,20 +119,11 @@ Do not publish account-specific ARNs, account IDs, email addresses, secret value
 │       └── secrets_manager_client.py
 ```
 
-The supplied directory listing showed an empty `terraform/` folder. The AWS infrastructure described here was configured and tested through the AWS Console and AWS CLI; this README does **not** claim that the deployed resources are currently provisioned by Terraform.
-
 ## Security design
 
 ### 1. Insecure examples and secret hygiene
 
 The `examples/insecure/` directory demonstrates credential exposure patterns using synthetic placeholders and a local `.env` example. The `.env` file must not be committed. Keep `.env` and `**/.env` in `.gitignore`, and use `.env.example` only for non-sensitive placeholder names and values.
-
-Before pushing to a public repository, run:
-
-```powershell
-git check-ignore -v .\examples\insecure\.env
-git status --short
-```
 
 Review the output and ensure that `.env`, real credentials, `actual-put-secret-value-event.json` (if it contains real identity details), and unredacted audit exports are not staged.
 
