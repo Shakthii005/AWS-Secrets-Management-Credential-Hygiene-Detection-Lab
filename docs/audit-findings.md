@@ -7,7 +7,7 @@
 
 **Event:** GetSecretValue
 
-**Account:** 121592733055
+**Account:** xxxxxxxxxx
 
 **Identity:** shakthivel-cloudsec
 
