@@ -6,7 +6,7 @@ This document records the STRIDE threat analysis for the Secrets Management & Cr
 
 **Environment scope**
 
-- One AWS account: `121592733055` (use a redacted account identifier in public screenshots and publications).
+- One AWS account: `xxxxxxxxxxx` (use a redacted account identifier in public screenshots and publications).
 - Mumbai (`ap-south-1`): AWS Secrets Manager, the rotation Lambda function, CloudTrail management trail, and secret/Lambda EventBridge detections.
 - N. Virginia (`us-east-1`): EventBridge detection for IAM global-service role-policy changes and a regional SNS topic.
 - Primary secret: `lab/database/credentials`.
