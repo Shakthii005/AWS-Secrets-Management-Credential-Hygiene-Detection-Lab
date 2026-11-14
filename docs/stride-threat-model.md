@@ -193,13 +193,3 @@ Store sanitized screenshots in `docs/screenshots/` and reference them from the R
 - Add infrastructure as code for the complete multi-Region deployment and test teardown.
 - Add a runbook for incident triage, secret rollback, role-policy review, and alert acknowledgement.
 
-## 7. Public portfolio checklist
-
-- [ ] Redact AWS account IDs, email addresses, full ARNs, request IDs, and personal identifiers from screenshots.
-- [ ] Confirm no secret values, passwords, access keys, session tokens, or unredacted `.env` contents are present.
-- [ ] Keep `.env` ignored by Git; commit only safe `.env.example` placeholders.
-- [ ] Confirm the temporary `TemporaryDetectionTestOnly` IAM inline policy is absent.
-- [ ] Confirm the Lambda description is restored to its original empty value.
-- [ ] State clearly that database rotation stages are simulated and no live database is connected.
-- [ ] State clearly that automatic rotation was disabled after the lab test.
-- [ ] Do not claim Terraform deployment or production readiness unless implemented and verified.
